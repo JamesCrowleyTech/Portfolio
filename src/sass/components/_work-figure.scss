@@ -1,0 +1,121 @@
+.work-figure {
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    //box-shadow: 0px 5px 15px 8px rgba(0, 0, 0, 0.2);
+
+    &__start {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__img {
+        transition: all 0.3s;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1.5rem;
+        //display: inline-block;
+    }
+
+    // &::after {
+    //     content: "";
+    //     width: 100%;
+    //     height: 100%;
+    //     display: inline-block;
+    //     display: none;
+    //     box-shadow: 0 0 50px 50px #000000 !important;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     border-radius: inherit;
+    //     z-index: 100;
+    //     background-color: red;
+    // }
+
+    &:hover {
+        box-shadow: 0px 0px 18px 15px rgba(0, 0, 0, 0.32);
+    }
+
+    &:hover &__img {
+        transform: scale(1.15);
+    }
+
+    &:hover &__hovered {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__figcaption {
+        font-size: $font-size-massive;
+        color: $font-lightest;
+        text-align: center;
+        letter-spacing: 2px;
+        line-height: 1;
+        background-color: whitesmoke;
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        width: 100%;
+        z-index: 22;
+    }
+
+    &__hovered {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color-navy, 0.85);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 2rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+    }
+
+    &__title {
+        width: 100%;
+        display: inline-block;
+        font-size: $font-size-huge;
+        font-weight: $font-medium;
+        color: $font-lightest;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    &__description {
+        color: $font-lightest;
+        text-align: center;
+        font-size: $font-size-normal + 0.2rem;
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // &__button:link,
+    &__button {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+
+        width: 45%;
+        padding: 1.5rem;
+        border: none;
+        color: $font-lightest;
+        font-size: 2.1rem;
+        border-radius: 1000px;
+        white-space: nowrap;
+        background-color: crimson;
+        transition: all 0.15s;
+    }
+}

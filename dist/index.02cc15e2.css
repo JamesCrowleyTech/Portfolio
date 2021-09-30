@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Hind";
+}
+
+.container {
+  display: grid;
+}
+
+.nav {
+  background-color: red;
+}
+
+
+
+
+
+
+
+/*# sourceMappingURL=index.02cc15e2.css.map */

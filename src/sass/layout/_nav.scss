@@ -1,0 +1,28 @@
+.nav {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr minmax(28rem, 95vw) 1fr;
+    grid-template-rows: min-content;
+    align-content: center;
+
+    div {
+        grid-column: 2 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__buttons {
+        list-style: none;
+        display: flex;
+
+        li:not(:first-child) {
+            margin-left: 1.5rem;
+        }
+    }
+
+    &__image {
+        height: 6rem;
+        width: 6rem;
+    }
+}

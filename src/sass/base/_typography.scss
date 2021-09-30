@@ -1,0 +1,82 @@
+.heading-primary {
+    font-size: $font-size-massive;
+}
+
+.heading-secondary {
+    font-size: $font-size-huge;
+}
+
+.heading-tertiary {
+    font-size: $font-size-large;
+}
+
+.heading-underlined {
+    text-decoration: underline;
+}
+
+.heading-line-sided {
+    &::before,
+    &::after {
+        content: "";
+        width: 100px;
+        height: 3px;
+        background-color: grey;
+        display: inline-block;
+        width: 50%;
+    }
+
+    &::after {
+        right: 0;
+        margin-left: 3rem;
+    }
+
+    &::before {
+        left: 0;
+        margin-right: 3rem;
+    }
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+}
+
+.font-weight-lightest {
+    font-weight: 300;
+}
+
+.font-weight-light {
+    font-weight: 400;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+.font-weight-heavy {
+    font-weight: 600;
+}
+
+.font-weight-heaviest {
+    font-weight: 700;
+}
+
+.font-white {
+    color: white;
+}
+
+.font-letter-spaced-sm {
+    letter-spacing: 1px;
+}
+
+.font-letter-spaced-lg {
+    letter-spacing: 2px;
+}
+
+.font-letter-spaced-hg {
+    letter-spacing: 3px;
+}
+
+.text-centered {
+    text-align: center;
+}

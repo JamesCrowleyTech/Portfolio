@@ -1,0 +1,16 @@
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/placeholders";
+
+@import "base/typography";
+@import "base/base";
+
+@import "components/btn";
+@import "components/main-icon";
+@import "components/work-figure";
+
+@import "layout/nav";
+@import "layout/intro";
+@import "layout/work";
+@import "layout/skills";

@@ -1,0 +1,49 @@
+.btn {
+    text-decoration: none;
+    padding: 1.2rem 2rem 0.9rem 2rem;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    font-size: $font-size-large;
+    font-weight: 400;
+    transition: all 0.2s;
+
+    &__normal {
+        border-radius: 100rem;
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    &__fill-on-hover {
+        border-radius: 100rem;
+        border: 2px solid $color-primary;
+        transform: translateY(-2px);
+        color: $color-primary;
+
+        &:hover {
+            background-color: $color-primary;
+            color: white;
+        }
+    }
+
+    &__intro {
+        background-color: darken(
+            rgba($color: $color-primary, $alpha: 0.45),
+            10%
+        );
+        padding: 2rem 4rem;
+        color: white;
+        display: inline-block;
+        border-radius: 999rem;
+        font-size: $font-size-very-large;
+        &:hover {
+            background-color: darken(
+                rgba($color: $color-primary, $alpha: 1),
+                10%
+            );
+        }
+    }
+}

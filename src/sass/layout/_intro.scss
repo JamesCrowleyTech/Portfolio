@@ -1,0 +1,13 @@
+.intro {
+    color: white;
+    background-color: rgba($color: $color-primary, $alpha: 0.75);
+    padding: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    & > * {
+        margin: 2rem 0;
+    }
+}

@@ -1,0 +1,24 @@
+.work {
+    display: grid;
+    width: 100%;
+    grid-template-columns: [work-full-start] 1fr [work-full-end];
+    grid-template-rows: 10rem;
+    gap: 6rem;
+    padding: 12rem calc(6vw - 0rem);
+
+    &__title {
+        grid-column: work-full-start / work-full-end;
+        grid-row: 1 / 2;
+        text-align: center;
+        align-self: center;
+        // justify-self: center;
+    }
+
+    &__main {
+        display: grid;
+        grid-column: work-full-start / work-full-end;
+        grid-auto-rows: minmax(28rem, 28rem);
+        grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+        gap: 6rem;
+    }
+}

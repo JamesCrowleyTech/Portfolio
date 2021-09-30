@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="0fe608c738a24b5c530bab60c07ae16f" type="image/png">
+        <link rel="stylesheet" href="ebf723ba07a6d934a2026acd3b1b6eed">
+        <link rel="preconnect" href="2354858baee7e0ae67ce5dcd33c9736a">
+        <link rel="preconnect" href="4a8a00904bae35c1104942c334d95ef2" crossorigin="">
+        <link href="cfd6df74df996d5f05ccb2f0eb758f80" rel="stylesheet">
+        <title>James Crowley</title>
+    </head>
+    <body class="container">
+        <nav class="nav">
+            <img src="3d068ea38269cbd513a0ebaabe13e472" alt="favicon" class="nav__icon">
+            <a href="#" class="nav__work">My Work</a>
+            <a href="" class="nav__contact">Contact</a>
+        </nav>
+    </body>
+</html>
+<script src="202f65accccb6071212b96a1d3c27081"></script>
