@@ -91,18 +91,14 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scrollbar-width: 40px;
 }
 
 body {
   font-size: 1.6rem;
   font-family: "Hind";
   color: #252525;
-  position: absolute;
-}
-
-.container {
-  display: grid;
-  grid-template-rows: 7rem;
+  position: relative;
 }
 
 .btn {
@@ -233,14 +229,13 @@ body {
 }
 .work-figure__buttons-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .work-figure__button {
   text-decoration: none;
   display: flex;
   justify-content: center;
-  width: 45%;
-  padding: 1.5rem;
+  padding: 1rem 2rem;
   border: none;
   color: #e9e9e9;
   font-size: 2.1rem;
@@ -249,10 +244,12 @@ body {
   background-color: crimson;
   transition: all 0.15s;
 }
+.work-figure__button:hover {
+  background-color: #c01134;
+}
 
 .nav {
   display: grid;
-  width: 100vw;
   grid-template-columns: 1fr minmax(28rem, 95vw) 1fr;
   grid-template-rows: min-content;
   align-content: center;
@@ -284,17 +281,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.intro > * {
-  margin: 2rem 0;
-}
-
 .work {
   display: grid;
-  width: 100%;
   grid-template-columns: [work-full-start] 1fr [work-full-end];
   grid-template-rows: 10rem;
-  gap: 6rem;
-  padding: 12rem calc(6vw - 0rem);
+  gap: 3rem;
+  padding: 12rem;
 }
 .work__title {
   grid-column: work-full-start/work-full-end;
@@ -313,16 +305,67 @@ body {
 .skills {
   display: flex;
   width: 100%;
-  padding: 12rem 6vw;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.skills__image {
+  height: 6rem;
+  margin: 0 3rem;
+}
+
+.contact {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
-.skills__content {
-  display: flex;
+
+.contact__title {
+  font-weight: 500;
+  font-size: 3.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
 }
-.skills__image {
-  height: 16rem;
-  width: 16rem;
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__form-item {
+  color: white;
+  background-color: #3a3a3a;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.contact__email {
+  height: 4rem;
+  width: 80rem;
+  font-size: 2rem;
+  font-family: monospace;
+  margin-bottom: 2rem;
+}
+
+.contact__message {
+  height: 23rem;
+  width: 80rem;
+  margin-bottom: 2rem;
+}
+
+.contact__btn {
+  border-radius: 0.5rem;
+  font-family: monospace;
+  padding: 0.8rem 1.3rem;
+  font-size: 2.4rem;
+  background-color: #3a3a3a;
+  color: #eee;
+  border: none;
+  outline: none;
 }
 
 /*# sourceMappingURL=/main.2026268b.css.map */

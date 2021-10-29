@@ -1,0 +1,53 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__title {
+    font-weight: 500;
+    font-size: 3.4rem;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__form-item {
+    color: white;
+    background-color: #3a3a3a;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.contact__email {
+    height: 4rem;
+    width: 80rem;
+    font-size: 2rem;
+    font-family: monospace;
+    margin-bottom: 2rem;
+}
+
+.contact__message {
+    height: 23rem;
+    width: 80rem;
+    margin-bottom: 2rem;
+}
+
+.contact__btn {
+    border-radius: 0.5rem;
+    font-family: monospace;
+    padding: 0.8rem 1.3rem;
+    font-size: 2.4rem;
+    background-color: #3a3a3a;
+    color: #eee;
+    border: none;
+    outline: none;
+}
