@@ -249,10 +249,12 @@ body {
 }
 
 .nav {
-  display: grid;
-  grid-template-columns: 1fr minmax(28rem, 95vw) 1fr;
-  grid-template-rows: min-content;
+  display: flex;
+  justify-content: space-between;
   align-content: center;
+  color: white;
+  padding: 0.7rem 1.6rem;
+  background-color: #a05bfc;
 }
 .nav div {
   grid-column: 2/3;
@@ -263,9 +265,26 @@ body {
 .nav__buttons {
   list-style: none;
   display: flex;
+  align-items: center;
 }
-.nav__buttons li:not(:first-child) {
-  margin-left: 1.5rem;
+.nav__button {
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+.nav__button-link {
+  color: inherit;
+  list-style: none;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: inherit;
 }
 .nav__image {
   height: 6rem;
@@ -273,8 +292,7 @@ body {
 }
 
 .intro {
-  color: white;
-  background-color: rgba(117, 16, 250, 0.75);
+  color: #222;
   padding: 12rem;
   display: flex;
   flex-direction: column;
@@ -286,7 +304,7 @@ body {
   grid-template-columns: [work-full-start] 1fr [work-full-end];
   grid-template-rows: 10rem;
   gap: 3rem;
-  padding: 12rem;
+  padding: 2rem calc(10vw - 3rem) 12rem calc(10vw - 3rem);
 }
 .work__title {
   grid-column: work-full-start/work-full-end;
@@ -366,6 +384,7 @@ body {
   color: #eee;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=/main.2026268b.css.map */

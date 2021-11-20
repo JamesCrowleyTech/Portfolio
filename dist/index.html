@@ -12,30 +12,27 @@
         <title>James Crowley</title>
     <script src="/main.2026268b.js"></script></head>
     <body class="container">
-        <!-- <nav class="nav">
-            <div>
-                <a href="#" class="main-icon" title="James Crowley"
+        <nav class="nav">
+            <!-- <a href="#" class="main-icon" title="James Crowley"
                     ><img src="/src/img/favicon.png" alt="favicon" class="nav__image"
-                /></a>
+                /></a> -->
+            <h2 class="nav__title font-weight-medium font-white heading-secondary font-letter-spaced-sm">James Crowley</h2>
 
-                <ul class="nav__buttons">
-                    <li class="nav__button">
-                        <a href="#" class="btn btn__normal">My Work</a>
-                    </li>
-                    <li class="nav__button">
-                        <a href="" class="btn btn__fill-on-hover">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav> -->
+            <ul class="nav__buttons">
+                <li class="nav__button" id="nav-btn-portfolio">
+                    <button type="button" href="#" class="nav__button-link">Portfolio</button>
+                </li>
+                <li class="nav__button" id="nav-btn-contact">
+                    <button type="button" class="nav__button-link">Contact</button>
+                </li>
+            </ul>
+        </nav>
 
         <section class="intro">
             <h1 class="heading-primary intro__title font-weight-medium">Looking for a developer?</h1>
             <h2 class="heading-secondary intro__subtitle font-weight-medium">
                 I'm James Crowley, a front-end developer based in Dublin, Ireland.
             </h2>
-            <a href="#" class="btn btn__intro">Email Me</a>
-            <a href="" class="btn btn__fill-on-hover">Contact</a>
         </section>
 
         <section class="skills">
@@ -115,4 +112,19 @@
             </form>
         </section>
     </body>
+    <script>var portfolioBtn = document.getElementById("nav-btn-portfolio");
+var contactBtn = document.getElementById("nav-btn-contact");
+var workSection = document.querySelector(".work");
+var contactSection = document.querySelector(".contact");
+var scrollOptions = {
+  behavior: "smooth",
+  block: "end",
+  inline: "nearest"
+};
+portfolioBtn.addEventListener("click", function () {
+  return workSection.scrollIntoView(scrollOptions);
+});
+contactBtn.addEventListener("click", function () {
+  return contactSection.scrollIntoView(scrollOptions);
+});</script>
 </html>
