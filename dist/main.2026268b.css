@@ -336,6 +336,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 .contact__title {
