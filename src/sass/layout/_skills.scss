@@ -6,7 +6,7 @@
     padding: 2rem 0;
 
     &__image {
-        height: 6rem;
-        margin: 0 3rem;
+        height: calc(1.5vw + 4rem);
+        margin: 0 calc(1vw + 0.4rem);
     }
 }
