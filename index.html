@@ -153,7 +153,7 @@
         const workSection = document.querySelector(".work");
         const contactSection = document.querySelector(".contact");
 
-        const scrollOptions = { behavior: "smooth", block: "end", inline: "nearest" };
+        const scrollOptions = { behavior: "smooth", block: "start", inline: "nearest" };
 
         portfolioBtn.addEventListener("click", () => workSection.scrollIntoView(scrollOptions));
         contactBtn.addEventListener("click", () => contactSection.scrollIntoView(scrollOptions));
