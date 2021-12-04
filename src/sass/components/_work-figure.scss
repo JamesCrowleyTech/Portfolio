@@ -67,7 +67,7 @@
     &__title {
         width: 100%;
         display: inline-block;
-        font-size: $font-size-huge;
+        font-size: calc(2rem + 0.4vw);
         font-weight: $font-medium;
         color: $font-lightest;
         text-align: center;
